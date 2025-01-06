@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto News & Weather</title>
+    <link rel="stylesheet" href="weatrher.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="weather-section">
+            <h2>Current Weather</h2>
+            <form id="weather-form">
+                <label for="city">Enter City:</label>
+                <input type="text" id="city" placeholder="e.g., New York" required>
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weather-data">
+            
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dario Simanic - Foundations Of Web Development</p>
+    </footer>
+
+    <script src="weather.js"></script>
+<script src="router.js"></script>
+</body>
+</html>

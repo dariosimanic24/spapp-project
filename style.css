@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;   
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a2e;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1a1a2e;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #1a1a2e;
+}
+
+#market-overview {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#crypto-overview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.crypto-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.crypto-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.crypto-box ul li {
+    margin: 10px 0;
+}
+
+.crypto-box p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#crypto-table {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #1a1a2e;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table td {
+    font-size: 14px;
+    color: #333;
+}
+
+
+.theme-switcher {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.theme-switcher label {
+    color: white;
+}
+
+.theme-switcher select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+body.default {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.default table {
+    background-color: white;
+    color: #333;
+}
+
+body.default table th {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+body.default table td {
+    background-color: white;
+    color: #333;
+}
+
+
+body.dark {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+body.dark table {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark table th {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark table td {
+    background-color: #333;
+    color: #fff;
+}
+
+
+body.light {
+    background-color: #ffffff;
+    color: #000;
+}
+
+body.light table {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.light table th {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.light table td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    #crypto-overview {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

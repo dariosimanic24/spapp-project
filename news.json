@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "image": "images/news3.jpeg",
+        "alt": "News Image",
+        "category": "News",
+        "title": "NFT sales surge 94% to $178.8m, Ethereum network ranks first",
+        "tags": ["BTC", "ETH", "SOL"],
+        "time": "20 hours ago"
+    },
+    {
+        "id": 2,
+        "image": "images/news4.webp",
+        "alt": "News Image",
+        "category": "Opinion",
+        "title": "Web3's responsibility is to advance data privacy | Opinion",
+        "tags": ["Opinion"],
+        "time": "1 day ago"
+    },
+    {
+        "id": 3,
+        "image": "images/news5.jpg",
+        "alt": "News Image",
+        "category": "News",
+        "title": "Dogecoin rally set to fuel new project Nollars in 2025",
+        "tags": ["DOGE"],
+        "time": "1 day ago"
+    },
+    {
+        "id": 4,
+        "image": "images/news6.webp",
+        "alt": "News Image",
+        "category": "Markets",
+        "title": "Floki whipsaws 14% on Coinbase listing",
+        "tags": ["FLOKI", "PEPE", "NEIRO"],
+        "time": "2 days ago"
+    },
+    {
+        "id": 5,
+        "image": "images/news7.webp",
+        "alt": "News Image",
+        "category": "News",
+        "title": "Satoshi-era Bitcoin wallet moves 2,000 BTC for the first time since 2010",
+        "tags": ["BTC"],
+        "time": "2 days ago"
+    }
+]
