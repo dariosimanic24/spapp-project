@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="register-container">
+        <section class="register-box">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="password-strength"></div>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <button type="submit" id="register-button">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dario Simanic - Foundation Of Web Development</p>
+    </footer>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="register.js"></script>
+<script src="router.js"></script>
+</body>
+</html>

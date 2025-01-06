@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Details</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="details">
+            <h2>Image Details</h2>
+            <div id="image-details"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dario Simanic - Foundations of Web Development</p>
+    </footer>
+
+    <script>
+        
+        const params = new URLSearchParams(window.location.search);
+        const imageId = params.get('id');
+
+        
+        const imageDetails = {
+            1: {
+                src: 'images/image1.png',
+                title: 'Image 1',
+                description: 'This is the first image in the gallery.'
+            },
+            2: {
+                src: 'images/image2.jpg',
+                title: 'Image 2',
+                description: 'This is the second image in the gallery.'
+            },
+            3: {
+                src: 'images/image3.png',
+                title: 'Image 3',
+                description: 'This is the third image in the gallery.'
+            }
+        };
+
+        const details = imageDetails[imageId];
+        if (details) {
+            document.getElementById('image-details').innerHTML = `
+                <img src="${details.src}" alt="${details.title}">
+                <h3>${details.title}</h3>
+                <p>${details.description}</p>
+            `;
+        } else {
+            document.getElementById('image-details').textContent = 'Image not found.';
+        }
+    </script>
+<script src="router.js"></script>
+</body>
+</html>

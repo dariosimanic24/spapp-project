@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    padding: 10px;
+    position: relative;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.news-content {
+    padding: 10px 0;
+}
+
+.category {
+    color: #e91e63;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.tags span {
+    background-color: #444;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.time {
+    color: #bbb;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.load-more-btn:hover {
+    background-color: #45a049;
+}
+
+
+.news-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.news-card button.edit {
+    background-color: #4caf50;
+    color: white;
+}
+
+.news-card button.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.news-card button:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+}

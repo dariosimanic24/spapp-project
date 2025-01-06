@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange Dario</title>
+    <link rel="icon" href="images/btc.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="exchange.html">Exchange</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="weather.html">Weather</a></li>
+            </ul>
+        </nav>
+       
+        <div class="font-switcher">
+            <label for="font-size">Font Size:</label>
+            <select id="font-size">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="market-overview">
+            <h1>Today's Cryptocurrency Prices by Market Cap</h1>
+            <p>The global crypto market cap is <strong>$3.06T</strong>, a <span style="color: green;">0.52% increase</span> over the last day.</p>
+        </section>
+
+        <section id="crypto-overview">
+            <div class="crypto-box">
+                <h2>Trending Coins</h2>
+                <ul>
+                    <li>#1 XRP - $1.07 <span style="color: green;">+3.27%</span></li>
+                    <li>#2 ADA - $0.7251 <span style="color: red;">-6.19%</span></li>
+                    <li>#3 GOGLZ - $0.5217 <span style="color: green;">+16.88%</span></li>
+                    <li>#4 FLOKI - $0.0002626 <span style="color: green;">+4.82%</span></li>
+                    <li>#5 PEPE - $0.00002126 <span style="color: red;">-1.98%</span></li>
+                </ul>
+            </div>
+
+            <div class="crypto-box">
+                <h2>Community Votes</h2>
+                <ul>
+                    <li>#1 PINGU <span style="color: green;">1,880 👍</span> <span style="color: red;">48 👎</span></li>
+                    <li>#2 KIRA <span style="color: green;">1,558 👍</span> <span style="color: red;">73 👎</span></li>
+                    <li>#3 MAYA <span style="color: green;">893 👍</span> <span style="color: red;">39 👎</span></li>
+                    <li>#4 LOCKIN <span style="color: green;">598 👍</span> <span style="color: red;">208 👎</span></li>
+                    <li>#5 KITTY <span style="color: green;">553 👍</span> <span style="color: red;">615 👎</span></li>
+                </ul>
+            </div>
+
+            <div class="crypto-box">
+                <h2>Fear and Greed Index</h2>
+                <img src="images/fearandgreed.PNG" alt="Fear And Greed Index" width="200" style="vertical-align: middle;">
+                <p>Extreme Greed</p>
+            </div>
+
+            <div class="crypto-box">
+                <h2>Dominance</h2>
+                <p><img src="images/btc.png" alt="Bitcoin Logo" width="30" style="vertical-align: middle;">BTC: 58.93%</p>
+                <p><img src="images/eth.png" alt="Ethereum Logo" width="30" style="vertical-align: middle;">ETH: 12.36%</p>
+            </div>
+        </section>
+
+        <section id="crypto-table">
+            <h2>Top Cryptocurrencies</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Market Cap</th>
+                    <th>24h Volume</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="images/btc.png" alt="Bitcoin Logo" width="20" style="vertical-align: middle;"> Bitcoin (BTC)</td>
+                    <td>$91,174.31</td>
+                    <td>$1,803,741,761,578</td>
+                    <td>$45,861,897,479</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><img src="images/eth.png" alt="Ethereum Logo" width="20" style="vertical-align: middle;"> Ethereum (ETH)</td>
+                    <td>$3,146.99</td>
+                    <td>$378,968,097,078</td>
+                    <td>$29,982,348,095</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><img src="images/usdt.png" alt="Tether Logo" width="20" style="vertical-align: middle;"> Tether (USDT)</td>
+                    <td>$1.00</td>
+                    <td>$127,540,001,705</td>
+                    <td>$144,557,979,635</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><img src="images/sol.png" alt="Solana Logo" width="20" style="vertical-align: middle;"> Solana (SOL)</td>
+                    <td>$239.00</td>
+                    <td>$112,811,154,395</td>
+                    <td>$8,537,277,950</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><img src="images/bnb.png" alt="Binance Coin Logo" width="20" style="vertical-align: middle;"> Binance Coin (BNB)</td>
+                    <td>$321.00</td>
+                    <td>$48,132,154,218</td>
+                    <td>$1,754,687,158</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td><img src="images/xrp.png" alt="XRP Logo" width="20" style="vertical-align: middle;"> XRP</td>
+                    <td>$1.07</td>
+                    <td>$51,321,015,478</td>
+                    <td>$3,146,987,654</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td><img src="images/dot.png" alt="Cardano Logo" width="20" style="vertical-align: middle;"> Cardano (ADA)</td>
+                    <td>$0.7251</td>
+                    <td>$25,641,785,456</td>
+                    <td>$941,256,475</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td><img src="images/doge.png" alt="Dogecoin Logo" width="20" style="vertical-align: middle;"> Dogecoin (DOGE)</td>
+                    <td>$0.071</td>
+                    <td>$10,231,654,789</td>
+                    <td>$564,897,123</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td><img src="images/matic.png" alt="Polygon Logo" width="20" style="vertical-align: middle;"> Polygon (MATIC)</td>
+                    <td>$1.15</td>
+                    <td>$8,512,945,123</td>
+                    <td>$421,987,654</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td><img src="images/shib.png" alt="Shiba Inu Logo" width="20" style="vertical-align: middle;"> Shiba Inu (SHIB)</td>
+                    <td>$0.00000721</td>
+                    <td>$5,132,456,987</td>
+                    <td>$213,456,789</td>
+                  </tr>
+                </tbody>
+              </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dario Simanic - Foundations of Web Development</p>
+    </footer>
+
+    <script src="theme.js"></script>
+<script src="router.js"></script>
+</body>
+</html>
